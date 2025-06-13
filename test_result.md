@@ -152,15 +152,18 @@ backend:
 
   - task: "Get menu by category"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented endpoint to get menu items by category"
+      - working: true
+        agent: "testing"
+        comment: "Get menu by category endpoint successfully returns items filtered by category. Found 4 appetizers and 5 main course items."
 
   - task: "Create menu item"
     implemented: true
