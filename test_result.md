@@ -107,15 +107,18 @@ user_problem_statement: "Test the Shriyansh Restaurant backend API that was just
 backend:
   - task: "Root endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented root endpoint that returns welcome message"
+      - working: true
+        agent: "testing"
+        comment: "Root endpoint successfully returns welcome message with status code 200"
 
   - task: "Restaurant info endpoint"
     implemented: true
