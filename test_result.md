@@ -122,15 +122,18 @@ backend:
 
   - task: "Restaurant info endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented restaurant info endpoint with Narsinghpur location and pure veg specialties"
+      - working: true
+        agent: "testing"
+        comment: "Restaurant info endpoint successfully returns correct information including Narsinghpur location and Pure Vegetarian specialty"
 
   - task: "Get all menu items"
     implemented: true
