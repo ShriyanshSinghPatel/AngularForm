@@ -182,15 +182,18 @@ backend:
 
   - task: "Create order"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented endpoint to create a new order with total calculation"
+      - working: true
+        agent: "testing"
+        comment: "Create order endpoint successfully creates a new order with proper total amount calculation (₹500.0 for 2 Paneer Tikka)"
 
 metadata:
   created_by: "main_agent"
