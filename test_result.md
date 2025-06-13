@@ -167,15 +167,18 @@ backend:
 
   - task: "Create menu item"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented endpoint to create a new menu item"
+      - working: true
+        agent: "testing"
+        comment: "Create menu item endpoint successfully creates a new menu item (Paneer Tikka) with proper ID generation"
 
   - task: "Create order"
     implemented: true
