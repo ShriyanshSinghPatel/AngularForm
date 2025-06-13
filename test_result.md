@@ -194,6 +194,18 @@ backend:
       - working: true
         agent: "testing"
         comment: "Create order endpoint successfully creates a new order with proper total amount calculation (₹500.0 for 2 Paneer Tikka)"
+        
+  - task: "Get all orders"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "Get all orders endpoint successfully returns orders with status code 200. Found 1 order."
 
 metadata:
   created_by: "main_agent"
