@@ -228,3 +228,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "I've implemented all the required API endpoints for the Shriyansh Restaurant backend. Please test all endpoints to ensure they're working correctly."
+  - agent: "testing"
+    message: "I've tested all the backend API endpoints and they are working correctly. All tests passed successfully. The API correctly handles restaurant information, menu items by category, creating new menu items, and order creation with proper total calculation. The database appears to be properly populated with 26 menu items across different categories."
