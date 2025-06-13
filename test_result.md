@@ -221,6 +221,7 @@ test_plan:
     - "Get menu by category"
     - "Create menu item"
     - "Create order"
+    - "Get all orders"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
