@@ -137,15 +137,18 @@ backend:
 
   - task: "Get all menu items"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented endpoint to get all menu items"
+      - working: true
+        agent: "testing"
+        comment: "Get all menu items endpoint successfully returns 26 menu items with status code 200"
 
   - task: "Get menu by category"
     implemented: true
